@@ -4,4 +4,15 @@
     <string name="password_text">Password</string>
     <string name="sign_up_text">Sign Up</string>
     <string name="login_text">Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_user">Welcome!</string>
+    <string name="text_onboarding">To continue with your awesome shoe store let\'s first read some instructions about how you can use your inventory. Please click Next below</string>
+    <string name="onboarding_next">Next</string>
+    <string name="instructions_text">Instructions:</string>
+    <string name="instructions_guide">You can do the following in this shoe store app:</string>
+    <string name="view_text">1) View your list of shoes</string>
+    <string name="add_shoe">2) Add a new shoe to your inventory</string>
+    <string name="have_fun">3) Go ahead and have fun with your shoes!</string>
+    <string name="go_to_inventory">Go to Inventory</string>
 </resources>
