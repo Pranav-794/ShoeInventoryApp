@@ -15,4 +15,11 @@
     <string name="add_shoe">2) Add a new shoe to your inventory</string>
     <string name="have_fun">3) Go ahead and have fun with your shoes!</string>
     <string name="go_to_inventory">Go to Inventory</string>
+    <string name="shoe_info">Shoe Information</string>
+    <string name="shoe_name">Name</string>
+    <string name="shoe_company">Company</string>
+    <string name="shoe_size">Size</string>
+    <string name="shoe_description">Description</string>
+    <string name="save_button">Save</string>
+    <string name="cancel_button">Cancel</string>
 </resources>
