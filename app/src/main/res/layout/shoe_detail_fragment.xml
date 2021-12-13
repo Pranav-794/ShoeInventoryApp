@@ -11,6 +11,7 @@
             name="shoeObject"
             type="com.udacity.shoestore.models.Shoe" />
     </data>
+    <!-- USING CONSTRAINT LAYOUT SINCE THE VIEWS ARE A LITTLE MORE INVOLVED DUE TO THE BUTTONS. -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
