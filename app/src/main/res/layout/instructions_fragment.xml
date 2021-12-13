@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".screens.instructions.InstructionsFragment">
 
     <TextView
         android:id="@+id/instructions_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="100dp"
         android:text="@string/instructions_text"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/text_follow_instructions"
@@ -23,8 +22,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/instructions_guide"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/instructions_title" />
 
     <TextView
@@ -33,8 +30,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/view_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_follow_instructions" />
 
     <TextView
@@ -43,9 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/add_shoe"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_step_one" />
 
     <TextView
@@ -54,8 +47,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/have_fun"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_step_two" />
 
     <Button
@@ -66,7 +57,5 @@
         android:backgroundTint="@color/colorPrimary"
         android:text="@string/go_to_inventory"
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_have_fun" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
