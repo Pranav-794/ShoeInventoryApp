@@ -1,53 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
-
-<androidx.constraintlayout.widget.ConstraintLayout
+<layout xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:backgroundTint="#020202"
-    android:foregroundTint="#000000"
-    tools:context=".screens.welcome.WelcomeFragment">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:id="@+id/text_welcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:text="@string/welcome_user"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#020202"
+        android:foregroundTint="#000000"
+        android:orientation="vertical"
+        tools:context=".screens.welcome.WelcomeFragment">
 
-    <TextView
-        android:id="@+id/text_onboarding"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="32dp"
-        android:paddingLeft="32dp"
-        android:paddingRight="32dp"
-        android:text="@string/text_onboarding"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_welcome" />
+        <TextView
+            android:id="@+id/text_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:text="@string/welcome_user"
+            android:textAlignment="center"
+            android:textSize="34sp" />
 
-    <Button
-        android:id="@+id/onboarding_next"
-        android:layout_width="150dp"
-        android:layout_height="75dp"
-        android:backgroundTint="@color/colorPrimary"
-        android:text="@string/onboarding_next"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_onboarding" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/text_onboarding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginEnd="32dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="@string/text_onboarding"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/text_welcome" />
+
+        <Button
+            android:id="@+id/onboarding_next"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/onboarding_next"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/text_onboarding" />
+    </LinearLayout>
 </layout>
