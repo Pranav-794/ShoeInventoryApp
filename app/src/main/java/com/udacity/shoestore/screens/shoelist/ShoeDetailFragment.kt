@@ -24,11 +24,10 @@ class ShoeDetailFragment : Fragment() {
         binding.shoeListViewModel = shoeListViewModel
         binding.lifecycleOwner = this
         binding.shoeObject = shoeObject
-
         binding.cancelButton.setOnClickListener {
             findNavController().navigate(ShoeDetailFragmentDirections.actionShoeDetailFragmentToShoeList())
         }
-        
+
         shoeListViewModel.savedState.observe(viewLifecycleOwner, { state ->
             when(state) {
                 com.udacity.shoestore.screens.shoelist.SavedState.ON_SAVE -> {

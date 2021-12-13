@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import timber.log.Timber
 
 enum class LoginState {
-    LOGGED_IN, LOGGED_OUT, REGISTERED, LOGIN_ERROR
+    LOGGED_IN, LOGGED_OUT, REGISTERED, LOGIN_ERROR, NO_OP
 }
 
 class LoginViewModel : ViewModel() {
@@ -40,6 +40,10 @@ class LoginViewModel : ViewModel() {
         _email.value = email
         _password.value = password
         Timber.i("User ${_email.value} has registered in successfully")
+    }
+
+    fun onLoginComplete() {
+        _loginState.value = LoginState.NO_OP
     }
 
     fun onLoginError() {
